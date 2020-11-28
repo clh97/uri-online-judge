@@ -5,20 +5,19 @@ using namespace std;
 
 int main() {
 
-  int id, workHours;
-  float hourSalary, monthSalary;
+  string name;
+  double salary, sales, salaryWithBonus;
 
-  cin >> id;
-  cin >> workHours;
-  cin >> hourSalary;
-  
-  monthSalary = hourSalary * workHours;
+  cin >> name;
+  cin >> salary;
+  cin >> sales;
+
+  salaryWithBonus = salary + (sales * .15);
 
   cout << fixed;
   cout << setprecision(2);
 
-  cout << "NUMBER = " << id << endl;
-  cout << "SALARY = U$ " << monthSalary << endl;
+  cout << "TOTAL = R$ " << salaryWithBonus << endl;
 
   return 0;
 }
