@@ -1,23 +1,22 @@
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 
 int main() {
 
-  string name;
-  double salary, sales, salaryWithBonus;
+  const double PI = 3.14159;
+  double R, volume;
 
-  cin >> name;
-  cin >> salary;
-  cin >> sales;
-
-  salaryWithBonus = salary + (sales * .15);
+  cin >> R;
 
   cout << fixed;
-  cout << setprecision(2);
+  cout << setprecision(3);
 
-  cout << "TOTAL = R$ " << salaryWithBonus << endl;
+  volume = (4.0/3.0) * PI * pow(R, 3);
+  
+  cout << "VOLUME = " << volume << endl;
 
   return 0;
 }
