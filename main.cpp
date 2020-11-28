@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -9,14 +10,21 @@ int main() {
    * Code your solution here
    * Escriba su solución aquí
    */
-  int A, B, SOMA;
+
+  float A, B, MEDIA;
+  float w1, w2;
+
+  w1 = 3.5;
+  w2 = 7.5;
 
   cin >> A;
   cin >> B;
 
-  SOMA = A + B;
+  cout << fixed;
+  cout << setprecision(5);
 
-  cout << "SOMA = " << SOMA << endl;
+  MEDIA = ((A * w1) + (B * w2)) / (w1 + w2);
 
+  cout << "MEDIA = " << MEDIA << endl;
   return 0;
 }
