@@ -1,26 +1,19 @@
 #include <iostream>
-#include <iomanip>
 
 using namespace std;
 
 int main() {
 
-  float A, B, C, MEDIA;
-  float wa, wb, wc;
-
-  wa = 2.0;
-  wb = 3.0;
-  wc = 5.0;
+  int A, B, C, D;
 
   cin >> A;
   cin >> B;
   cin >> C;
+  cin >> D;
 
-  cout << fixed;
-  cout << setprecision(1);
+  int DIFERENCA = (A * B) - (C * D);
 
-  MEDIA = ((A * wa) + (B * wb) + (C * wc)) / (wa + wb + wc);
+  cout << "DIFERENCA = " << DIFERENCA << endl;
 
-  cout << "MEDIA = " << MEDIA << endl;
   return 0;
 }
