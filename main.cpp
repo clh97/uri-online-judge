@@ -5,25 +5,21 @@ using namespace std;
 
 int main() {
 
-  /**
-   * Escreva a sua solução aqui
-   * Code your solution here
-   * Escriba su solución aquí
-   */
+  float A, B, C, MEDIA;
+  float wa, wb, wc;
 
-  float A, B, MEDIA;
-  float w1, w2;
-
-  w1 = 3.5;
-  w2 = 7.5;
+  wa = 2.0;
+  wb = 3.0;
+  wc = 5.0;
 
   cin >> A;
   cin >> B;
+  cin >> C;
 
   cout << fixed;
-  cout << setprecision(5);
+  cout << setprecision(1);
 
-  MEDIA = ((A * w1) + (B * w2)) / (w1 + w2);
+  MEDIA = ((A * wa) + (B * wb) + (C * wc)) / (wa + wb + wc);
 
   cout << "MEDIA = " << MEDIA << endl;
   return 0;
