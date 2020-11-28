@@ -1,19 +1,24 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main() {
 
-  int A, B, C, D;
+  int id, workHours;
+  float hourSalary, monthSalary;
 
-  cin >> A;
-  cin >> B;
-  cin >> C;
-  cin >> D;
+  cin >> id;
+  cin >> workHours;
+  cin >> hourSalary;
+  
+  monthSalary = hourSalary * workHours;
 
-  int DIFERENCA = (A * B) - (C * D);
+  cout << fixed;
+  cout << setprecision(2);
 
-  cout << "DIFERENCA = " << DIFERENCA << endl;
+  cout << "NUMBER = " << id << endl;
+  cout << "SALARY = U$ " << monthSalary << endl;
 
   return 0;
 }
