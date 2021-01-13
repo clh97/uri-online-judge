@@ -1,39 +1,33 @@
 #include <iostream>
 #include <iomanip>
 #include <sstream>
+#include <cmath>
 #include <vector>
 
 using namespace std;
 
 int main() {
-
-  const double PI = 3.14159;
-  double i1, i2, i3;
-  double tri, cir, tra, squa, rect;
+  int a, b, c;
 
   string input;
   getline(cin, input);
 
   stringstream ss(input);
 
-  ss >> i1;
-  ss >> i2;
-  ss >> i3;
+  ss >> a;
+  ss >> b;
+  ss >> c;
 
-  tri = (i1 * i3) / 2;
-  cir = (i3 * i3) * PI;
-  tra = ((i1 + i2) / 2) * i3;
-  squa = i2 * i2;
-  rect = i1 * i2;
+  int maior;
 
-  cout << fixed;
-  cout << setprecision(3);
+  int maiorab = (a+b+abs(a-b))/2;
 
-  cout << "TRIANGULO: " << tri << endl;
-  cout << "CIRCULO: " << cir << endl;
-  cout << "TRAPEZIO: " << tra << endl;
-  cout << "QUADRADO: " << squa << endl;
-  cout << "RETANGULO: " << rect << endl;
+  if (c > maiorab) {
+    maior = c;
+  } else {
+    maior = maiorab;
+  }
 
+  cout << maior << " eh o maior" << endl;
   return 0;
 }
