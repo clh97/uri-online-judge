@@ -19,6 +19,8 @@ int main()
 
   cin >> money;
 
+  cout << money << endl;
+
   cout.imbue(locale(cout.getloc(), new punct_facet<char, ','>));
 
   for(float i : cells) {
