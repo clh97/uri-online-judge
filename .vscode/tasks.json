@@ -3,12 +3,10 @@
   "tasks": [
     {
       "type": "shell",
-      "label": "clang++ build active file",
-      "command": "/usr/bin/clang++",
+      "label": "g++ build active file",
+      "command": "/usr/bin/g++",
       "args": [
         "-std=c++17",
-        "-stdlib=libc++",
-        "-g",
         "${file}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}"

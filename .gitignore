@@ -1,5 +1,5 @@
-!main.cpp
-!Makefile
-!.gitignore
+*/*
 
-!*/
+!**/main.cpp
+!**/Makefile
+!**/.gitignore
