@@ -46,6 +46,7 @@
     "limits": "cpp",
     "new": "cpp",
     "numbers": "cpp",
-    "streambuf": "cpp"
+    "streambuf": "cpp",
+    "locale": "cpp"
   }
 }
