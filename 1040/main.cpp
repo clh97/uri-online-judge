@@ -14,6 +14,9 @@ int main() {
   cin >> c;
   cin >> d;
 
+  cout << fixed << showpoint;
+  cout << setprecision(1);
+
   double avg = ((a * 2.0) + (b * 3.0) + (c * 4.0) + (d * 1.0)) / (2.0 + 3.0 + 4.0 + 1.0);
   double avgRounded = floor(avg * 10) / 10;
 
@@ -21,7 +24,7 @@ int main() {
 
   if (avgRounded >= 7.0) {
     cout << "Aluno aprovado." << endl;
-  } else if (avgRounded > 5.1 && avgRounded <= 6.9) {
+  } else if (avgRounded >= 5.0 && avgRounded <= 6.9) {
     cout << "Aluno em exame." << endl;
     cin >> exam;
     cout << "Nota do exame: " << exam << endl;
