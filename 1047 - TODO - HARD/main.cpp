@@ -32,8 +32,11 @@ int main()
     resultMinutes = finalMinute - initialMinute;
   }
 
-  if (initialHour == finalHour && initialMinute == finalMinute) {
+  if (initialHour == finalHour) {
     resultHours = 24;
+  }
+
+  if (initialMinute == finalMinute) {
     resultMinutes = 0;
   }
 
