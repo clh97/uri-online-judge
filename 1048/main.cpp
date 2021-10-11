@@ -31,6 +31,5 @@ int main() {
   cout << "Reajuste ganho: " << readjustmentValue << endl;
   cout << "Em percentual: " << (int)readjustmentRate << " %" << endl;
 
-
   return 0;
 }
