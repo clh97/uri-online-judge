@@ -3,3 +3,6 @@
 !**/main.cpp
 !**/Makefile
 !**/.gitignore
+
+!**/*.go
+!**/*.mod
